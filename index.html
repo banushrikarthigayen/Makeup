@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLAM Makeover Studio — Premium Beauty & Luxury Cosmetics</title>
+  <meta name="description" content="Discover GLAM Makeover Studio signature salon services, high-performance cosmetics, virtual lip try-on, and smart shade finding." />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="top-navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="GLAM Makeover Studio Homepage">
+        <img src="/glam-logo.png" alt="GLAM Makeover Studio Logo" class="brand-logo-img" />
+        <span class="brand-text">GLAM <span class="logo-badge">MAKEOVER STUDIO</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#shade-finder" class="nav-link">Shade Finder</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+
+          <!-- Services Nav Item with Dropdown -->
+          <li class="nav-item-dropdown" id="services-nav-item">
+            <a href="#services" class="nav-link dropdown-toggle" id="services-toggle" aria-expanded="false" aria-haspopup="true">
+              Services
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </a>
+
+            <!-- Services Dropdown / Mega Menu -->
+            <div class="services-dropdown" id="services-dropdown">
+              <div class="services-dropdown-inner">
+                
+                <!-- Category 1: Beauty & Hair Services -->
+                <div class="service-category">
+                  <div class="category-header">
+                    <span class="category-badge-icon">✂️</span>
+                    <h4 class="category-title">BEAUTY & HAIR SERVICES</h4>
+                  </div>
+                  <ul class="service-list">
+                    <li><a href="#services" class="service-link" data-service="Pedicure"><img src="/service-pedicure.jpg" alt="Pedicure" class="nav-service-thumb" /> Pedicure</a></li>
+                    <li><a href="#services" class="service-link" data-service="Hair Extensions"><img src="/service-hair-extensions.jpg" alt="Hair Extensions" class="nav-service-thumb" /> Hair Extensions</a></li>
+                    <li><a href="#services" class="service-link" data-service="Hair Colour"><img src="/service-hair-colour.jpg" alt="Hair Colour" class="nav-service-thumb" /> Hair Colour</a></li>
+                    <li><a href="#services" class="service-link" data-service="Men's Style Cut"><img src="/service-mens-cut.jpg" alt="Men's Style Cut" class="nav-service-thumb" /> Men's Style Cut</a></li>
+                    <li><a href="#services" class="service-link" data-service="Hair Treatment"><img src="/service-hair-treatment.jpg" alt="Hair Treatment" class="nav-service-thumb" /> Hair Treatment</a></li>
+                    <li><a href="#services" class="service-link" data-service="Women's Haircut"><img src="/service-womens-cut.jpg" alt="Women's Haircut" class="nav-service-thumb" /> Women's Haircut</a></li>
+                    <li><a href="#services" class="service-link" data-service="Men's Professional Cut"><img src="/service-mens-barber.jpg" alt="Men's Professional Cut" class="nav-service-thumb" /> Men's Professional Cut</a></li>
+                  </ul>
+                </div>
+
+                <!-- Category 2: Beauty & Makeup Services -->
+                <div class="service-category">
+                  <div class="category-header">
+                    <span class="category-badge-icon">💄</span>
+                    <h4 class="category-title">BEAUTY & MAKEUP SERVICES</h4>
+                  </div>
+                  <ul class="service-list">
+                    <li><a href="#services" class="service-link" data-service="Mole Removal"><img src="/service-mole-removal.jpg" alt="Mole Removal" class="nav-service-thumb" /> Mole Removal</a></li>
+                    <li><a href="#services" class="service-link" data-service="Ear Piercing"><img src="/service-ear-piercing.jpg" alt="Ear Piercing" class="nav-service-thumb" /> Ear Piercing</a></li>
+                    <li><a href="#services" class="service-link" data-service="Trending Eyebrow Styling"><img src="/service-eyebrows.jpg" alt="Eyebrow Styling" class="nav-service-thumb" /> Trending Eyebrow Styling</a></li>
+                    <li><a href="#services" class="service-link" data-service="Bridal Makeup"><img src="/service-bridal-makeup.jpg" alt="Bridal Makeup" class="nav-service-thumb" /> Bridal Makeup</a></li>
+                    <li><a href="#services" class="service-link" data-service="Mehandi"><img src="/service-mehandi.jpg" alt="Mehandi" class="nav-service-thumb" /> Mehandi</a></li>
+                    <li><a href="#services" class="service-link" data-service="Groom Makeup"><img src="/service-groom-makeup.jpg" alt="Groom Makeup" class="nav-service-thumb" /> Groom Makeup</a></li>
+                    <li><a href="#services" class="service-link" data-service="Facial"><img src="/service-facial.jpg" alt="Facial" class="nav-service-thumb" /> Facial</a></li>
+                    <li><a href="#services" class="service-link" data-service="Nail Arts"><img src="/service-nail-arts.jpg" alt="Nail Arts" class="nav-service-thumb" /> Nail Arts</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li><a href="#virtual-studio" class="nav-link">Virtual Studio</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle, Cart, Try On Live) -->
+      <div class="nav-actions">
+        <!-- Theme Switcher Button -->
+        <button class="theme-toggle-btn" id="theme-toggle-desktop" aria-label="Switch Theme Mode" title="Toggle Dark / Light Mode">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="btn-icon" id="cart-btn" aria-label="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="badge-count" id="cart-count">0</span>
+        </button>
+
+        <!-- Try On Live Button -->
+        <a href="#virtual-studio" class="btn-primary desktop-try-on-btn">Try On Live ✨</a>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Mobile Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation Menu">
+    <div class="mobile-drawer-header">
+      <a href="#" class="brand-logo">
+        <img src="/glam-logo.png" alt="GLAM Logo" class="brand-logo-img" />
+        <span class="brand-text">GLAM <span class="logo-badge">STUDIO</span></span>
+      </a>
+      <button class="close-mobile-drawer" id="close-mobile-nav" aria-label="Close Menu">✕</button>
+    </div>
+
+    <!-- Theme Switcher Row in Mobile Menu -->
+    <div class="mobile-theme-row">
+      <span class="mobile-theme-label">Appearance Theme</span>
+      <button class="theme-toggle-btn-mobile" id="theme-toggle-mobile" aria-label="Switch Theme Mode">
+        <span class="theme-text-light">☀️ Light</span>
+        <span class="theme-text-dark">🌙 Dark</span>
+      </button>
+    </div>
+
+    <nav class="mobile-drawer-nav">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link active"><span>🏠 Home</span></a></li>
+        <li><a href="#shade-finder" class="mobile-nav-link"><span>✨ Shade Finder</span></a></li>
+        <li><a href="#products" class="mobile-nav-link"><span>💄 Products</span></a></li>
+        
+        <!-- Mobile Expandable Services Item -->
+        <li class="mobile-services-item">
+          <button class="mobile-services-accordion" id="mobile-services-accordion" aria-expanded="false">
+            <span>✂️ Services</span>
+            <svg class="accordion-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          
+          <div class="mobile-services-sublist" id="mobile-services-sublist">
+            <a href="#services" class="mobile-service-link" data-service="Pedicure"><img src="/service-pedicure.jpg" alt="Pedicure" class="nav-service-thumb" /> Pedicure</a>
+            <a href="#services" class="mobile-service-link" data-service="Hair Extensions"><img src="/service-hair-extensions.jpg" alt="Hair Extensions" class="nav-service-thumb" /> Hair Extensions</a>
+            <a href="#services" class="mobile-service-link" data-service="Hair Colour"><img src="/service-hair-colour.jpg" alt="Hair Colour" class="nav-service-thumb" /> Hair Colour</a>
+            <a href="#services" class="mobile-service-link" data-service="Men's Style Cut"><img src="/service-mens-cut.jpg" alt="Men's Style Cut" class="nav-service-thumb" /> Men's Style Cut</a>
+            <a href="#services" class="mobile-service-link" data-service="Hair Treatment"><img src="/service-hair-treatment.jpg" alt="Hair Treatment" class="nav-service-thumb" /> Hair Treatment</a>
+            <a href="#services" class="mobile-service-link" data-service="Women's Haircut"><img src="/service-womens-cut.jpg" alt="Women's Haircut" class="nav-service-thumb" /> Women's Haircut</a>
+            <a href="#services" class="mobile-service-link" data-service="Men's Professional Cut"><img src="/service-mens-barber.jpg" alt="Men's Barber" class="nav-service-thumb" /> Men's Professional Cut</a>
+            <a href="#services" class="mobile-service-link" data-service="Mole Removal"><img src="/service-mole-removal.jpg" alt="Mole Removal" class="nav-service-thumb" /> Mole Removal</a>
+            <a href="#services" class="mobile-service-link" data-service="Ear Piercing"><img src="/service-ear-piercing.jpg" alt="Ear Piercing" class="nav-service-thumb" /> Ear Piercing</a>
+            <a href="#services" class="mobile-service-link" data-service="Trending Eyebrow Styling"><img src="/service-eyebrows.jpg" alt="Eyebrow" class="nav-service-thumb" /> Trending Eyebrow Styling</a>
+            <a href="#services" class="mobile-service-link" data-service="Bridal Makeup"><img src="/service-bridal-makeup.jpg" alt="Bridal" class="nav-service-thumb" /> Bridal Makeup</a>
+            <a href="#services" class="mobile-service-link" data-service="Mehandi"><img src="/service-mehandi.jpg" alt="Mehandi" class="nav-service-thumb" /> Mehandi</a>
+            <a href="#services" class="mobile-service-link" data-service="Groom Makeup"><img src="/service-groom-makeup.jpg" alt="Groom" class="nav-service-thumb" /> Groom Makeup</a>
+            <a href="#services" class="mobile-service-link" data-service="Facial"><img src="/service-facial.jpg" alt="Facial" class="nav-service-thumb" /> Facial</a>
+            <a href="#services" class="mobile-service-link" data-service="Nail Arts"><img src="/service-nail-arts.jpg" alt="Nail Arts" class="nav-service-thumb" /> Nail Arts</a>
+          </div>
+        </li>
+
+        <li><a href="#virtual-studio" class="mobile-nav-link"><span>📷 Virtual Studio</span></a></li>
+        <li><a href="#reviews" class="mobile-nav-link"><span>⭐ Customer Reviews</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-drawer-footer">
+      <a href="#virtual-studio" class="btn-primary mobile-try-on-btn">Try On Live Studio ✨</a>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>👑</span> Luxury Makeover & Cosmetics 2026
+        </div>
+        <h1 class="hero-title">
+          Unveil Your <br />
+          <span class="text-gradient">Radiant Beauty</span>
+        </h1>
+        <p class="hero-desc">
+          High-performance luxury makeup infused with skin-nourishing botanical elixirs, paired with master salon & bridal artistry by GLAM Makeover Studio.
+        </p>
+        <div class="hero-cta">
+          <a href="#products" class="btn-primary">Shop Collection</a>
+          <a href="#shade-finder" class="btn-outline">Find My Shade</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img 
+            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" 
+            alt="GLAM Luxe Cosmetics" 
+            class="hero-image" 
+          />
+          <div class="floating-badge">
+            <div class="badge-text-group">
+              <h4 class="floating-title">Velvet Touch Matte</h4>
+              <p class="floating-subtitle">16-Hour Hydrating Wear</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shade Finder Section -->
+  <section class="shade-finder-section" id="shade-finder">
+    <div class="container">
+      <div class="shade-finder-card">
+        <div class="section-header shade-header-left">
+          <span class="section-subtitle">AI Precision Matching</span>
+          <h2 class="section-title">Smart Shade Matcher</h2>
+          <p class="section-desc-sub">Select your skin details to calculate custom product & foundation recommendations.</p>
+        </div>
+
+        <div class="shade-steps">
+          <!-- Step 1: Skin Tone -->
+          <div class="step-box">
+            <div class="step-title">1. Skin Tone</div>
+            <div class="swatch-options">
+              <button class="swatch-btn selected" style="background: #f7d9c4;" onclick="selectTone(this, 'Fair')" aria-label="Fair Tone"></button>
+              <button class="swatch-btn" style="background: #e5b99a;" onclick="selectTone(this, 'Light')" aria-label="Light Tone"></button>
+              <button class="swatch-btn" style="background: #cf9b78;" onclick="selectTone(this, 'Medium')" aria-label="Medium Tone"></button>
+              <button class="swatch-btn" style="background: #9e6343;" onclick="selectTone(this, 'Tan')" aria-label="Tan Tone"></button>
+              <button class="swatch-btn" style="background: #5c351f;" onclick="selectTone(this, 'Deep')" aria-label="Deep Tone"></button>
+            </div>
+          </div>
+
+          <!-- Step 2: Undertone -->
+          <div class="step-box">
+            <div class="step-title">2. Undertone</div>
+            <div class="swatch-options gap-tight">
+              <button class="tab-btn active step-tab" onclick="selectUndertone(this, 'Cool')">Cool</button>
+              <button class="tab-btn step-tab" onclick="selectUndertone(this, 'Warm')">Warm</button>
+              <button class="tab-btn step-tab" onclick="selectUndertone(this, 'Neutral')">Neutral</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Finish -->
+          <div class="step-box">
+            <div class="step-title">3. Desired Finish</div>
+            <div class="swatch-options gap-tight">
+              <button class="tab-btn active step-tab" onclick="selectFinish(this, 'Dewy')">Dewy</button>
+              <button class="tab-btn step-tab" onclick="selectFinish(this, 'Matte')">Matte</button>
+              <button class="tab-btn step-tab" onclick="selectFinish(this, 'Satin')">Satin</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart Recommendation Result Banner -->
+        <div class="shade-match-result" id="shade-match-result">
+          <div class="result-badge">✨ Match Found: <strong id="matched-shade-name">Fair 10 (Cool Dewy)</strong></div>
+          <p class="result-desc">Recommended: Luminous Silk Foundation in Shade 102 & Velvet Touch Matte Lipstick in Rose Quartz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Curated Essentials</span>
+        <h2 class="section-title">Makeup10 Signature Line</h2>
+        <p class="section-desc-center">
+          Dermatologist tested, cruelty-free, and formulated with ultra-fine pigments for seamless blending.
+        </p>
+      </div>
+
+      <div class="filter-tabs" id="products-filter-tabs">
+        <button class="tab-btn active" data-category="all">All Products</button>
+        <button class="tab-btn" data-category="lips">Lips</button>
+        <button class="tab-btn" data-category="face">Face</button>
+        <button class="tab-btn" data-category="eyes">Eyes</button>
+        <button class="tab-btn" data-category="glow">Glow & Highlight</button>
+        <button class="tab-btn" data-category="skincare">Skincare</button>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+        <!-- Injected dynamically via main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Studio Services Showcase Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Bespoke Salon & Studio Treatments</span>
+        <h2 class="section-title">GLAM Studio Services</h2>
+        <p class="section-desc-center">
+          Experience world-class hair styling, restorative treatments, advanced skin care, and luxury makeup services tailored by GLAM Makeover Studio professionals.
+        </p>
+      </div>
+
+      <!-- Featured Services Header -->
+      <div class="featured-services-header">
+        <h3 class="featured-services-title">✨ Featured Studio Services</h3>
+        <p class="featured-services-subtitle">Explore our signature treatments with real client transformations & premium care</p>
+      </div>
+
+      <!-- Featured Services Cards Grid -->
+      <div class="featured-services-grid">
+        <!-- Service 1: Pedicure -->
+        <div class="service-card-featured" id="card-pedicure" onclick="openServiceBooking('pedicure')">
+          <div class="service-card-img-wrap">
+            <img src="/service-pedicure.jpg" alt="Pedicure & Foot Spa" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Relaxing Spa</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">NAILS & SPA</span>
+            <h4 class="service-card-title">Pedicure</h4>
+            <p class="service-card-desc">Therapeutic warm foot soak, exfoliative scrub, cuticle care, massaged hydration, and gel polish finish.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 60 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Hair Extensions -->
+        <div class="service-card-featured" id="card-hair-extensions" onclick="openServiceBooking('hair-extensions')">
+          <div class="service-card-img-wrap">
+            <img src="/service-hair-extensions.jpg" alt="Hair Extensions" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Salon Masterclass</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">HAIR ARTISTRY</span>
+            <h4 class="service-card-title">Hair Extensions</h4>
+            <p class="service-card-desc">100% Remy human hair seamless micro-bonding extension installation for instant length & lavish fullness.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 120 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Hair Colour -->
+        <div class="service-card-featured" id="card-hair-colour" onclick="openServiceBooking('hair-colour')">
+          <div class="service-card-img-wrap">
+            <img src="/service-hair-colour.jpg" alt="Hair Colour" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Autumn Special</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">COLOR STUDIO</span>
+            <h4 class="service-card-title">Hair Colour</h4>
+            <p class="service-card-desc">Custom hand-painted auburn & chestnut highlights, gloss toner treatment, and dimensional wave styling.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 90 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Men's Style Cut -->
+        <div class="service-card-featured" id="card-mens-cut" onclick="openServiceBooking('mens-cut')">
+          <div class="service-card-img-wrap">
+            <img src="/service-mens-cut.jpg" alt="Men's Style Cut" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Barber & Stylist Pick</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">BEAUTY & HAIR</span>
+            <h4 class="service-card-title">Men's Style Cut</h4>
+            <p class="service-card-desc">Precision textured haircut, crisp fade styling, line-up, and scalp refreshing wash for modern gentlemen.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 45 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5: Hair Treatment -->
+        <div class="service-card-featured" id="card-hair-treatment" onclick="openServiceBooking('hair-treatment')">
+          <div class="service-card-img-wrap">
+            <img src="/service-hair-treatment.jpg" alt="Hair Treatment" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge badge-transform">Before & After Marvel</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">HAIR RESTORATION</span>
+            <h4 class="service-card-title">Hair Treatment</h4>
+            <p class="service-card-desc">Deep protein restructuring keratin treatment transforming coarse & frizzy tresses into silky straight shine.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 90 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: Women's Haircut -->
+        <div class="service-card-featured" id="card-womens-cut" onclick="openServiceBooking('womens-cut')">
+          <div class="service-card-img-wrap">
+            <img src="/service-womens-cut.jpg" alt="Women's Haircut" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Couture Styling</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">BEAUTY & HAIR</span>
+            <h4 class="service-card-title">Women's Haircut</h4>
+            <p class="service-card-desc">Bespoke face-framing layers, soft curtain fringe, split-end trim, and blow-dry styling for natural volume.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 50 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 7: Mole Removal -->
+        <div class="service-card-featured" id="card-mole-removal" onclick="openServiceBooking('mole-removal')">
+          <div class="service-card-img-wrap">
+            <img src="/service-mole-removal.jpg" alt="Mole Removal" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Dermatology</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">SKIN CARE</span>
+            <h4 class="service-card-title">Mole Removal</h4>
+            <p class="service-card-desc">Safe, hygienic, and painless precision dermatological mole removal treatment by certified specialists.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 30 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 8: Ear Piercing -->
+        <div class="service-card-featured" id="card-ear-piercing" onclick="openServiceBooking('ear-piercing')">
+          <div class="service-card-img-wrap">
+            <img src="/service-ear-piercing.jpg" alt="Ear Piercing" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Hygiene Certified</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">BEAUTY & PIERCING</span>
+            <h4 class="service-card-title">Ear Piercing</h4>
+            <p class="service-card-desc">Sterile, medical-grade ear piercing with hypoallergenic gold studs and antiseptic soothing aftercare.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 20 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 9: Trending Eyebrow Styling -->
+        <div class="service-card-featured" id="card-eyebrows" onclick="openServiceBooking('eyebrows')">
+          <div class="service-card-img-wrap">
+            <img src="/service-eyebrows.jpg" alt="Trending Eyebrow Styling" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Trending Service</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">BEAUTY & MAKEUP</span>
+            <h4 class="service-card-title">Trending Eyebrow Styling</h4>
+            <p class="service-card-desc">High-precision organic thread arch mapping, brow shaping, and soothing aloe gel finish for sharp elegance.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 30 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 10: Men's Professional Cut -->
+        <div class="service-card-featured" id="card-mens-barber" onclick="openServiceBooking('mens-barber')">
+          <div class="service-card-img-wrap">
+            <img src="/service-mens-barber.jpg" alt="Men's Professional Cut" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Gentleman's Choice</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">BEAUTY & HAIR</span>
+            <h4 class="service-card-title">Men's Professional Cut</h4>
+            <p class="service-card-desc">Master barber clipper work, tapered neck finish, beard trim sculpting, and hair tonic massage.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 45 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 11: Bridal Makeup -->
+        <div class="service-card-featured" id="card-bridal-makeup" onclick="openServiceBooking('bridal-makeup')">
+          <div class="service-card-img-wrap">
+            <img src="/service-bridal-makeup.jpg" alt="Bridal Makeup" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Bridal Luxury</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">MAKEUP ARTISTRY</span>
+            <h4 class="service-card-title">Bridal Makeup</h4>
+            <p class="service-card-desc">High-definition waterproof bridal makeover, lash application, saree/dupatta draping, and skin prep.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 150 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 12: Mehandi -->
+        <div class="service-card-featured" id="card-mehandi" onclick="openServiceBooking('mehandi')">
+          <div class="service-card-img-wrap">
+            <img src="/service-mehandi.jpg" alt="Mehandi" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Organic Henna</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">TRADITIONAL ART</span>
+            <h4 class="service-card-title">Mehandi</h4>
+            <p class="service-card-desc">Intricate bridal & festive henna art design using 100% natural, dark-staining organic herbal mehandi.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 90 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 13: Groom Makeup -->
+        <div class="service-card-featured" id="card-groom-makeup" onclick="openServiceBooking('groom-makeup')">
+          <div class="service-card-img-wrap">
+            <img src="/service-groom-makeup.jpg" alt="Groom Makeup" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Groom Special</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">GROOMING</span>
+            <h4 class="service-card-title">Groom Makeup</h4>
+            <p class="service-card-desc">Natural anti-shine skin retouching, beard definition, hair styling, and photo-ready complexion prep.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 60 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 14: Facial -->
+        <div class="service-card-featured" id="card-facial" onclick="openServiceBooking('facial')">
+          <div class="service-card-img-wrap">
+            <img src="/service-facial.jpg" alt="Facial" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Radiant Glow</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">SKIN SPA</span>
+            <h4 class="service-card-title">Facial</h4>
+            <p class="service-card-desc">Deep cleansing hydra-facial, steam extraction, collagen massage mask, and botanical serum glow therapy.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 60 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 15: Nail Arts -->
+        <div class="service-card-featured" id="card-nail-arts" onclick="openServiceBooking('nail-arts')">
+          <div class="service-card-img-wrap">
+            <img src="/service-nail-arts.jpg" alt="Nail Arts" class="service-card-img" loading="lazy" />
+            <span class="service-card-badge">Nail Couture</span>
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-category">NAIL ARTISTRY</span>
+            <h4 class="service-card-title">Nail Arts</h4>
+            <p class="service-card-desc">Custom gel extension art, chrome powder finishes, 3D rhinestones, and hand-painted nail designs.</p>
+            <div class="service-card-footer">
+              <div class="service-card-price-info">
+                <span class="service-card-duration">⏱ 45 min</span>
+              </div>
+              <button class="btn-primary btn-sm-service">Book Treatment ✨</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories & Quick Selection Chips -->
+      <div class="services-showcase-grid">
+        <!-- Beauty & Hair Category Card -->
+        <div class="services-showcase-card">
+          <div class="services-showcase-header">
+            <span class="showcase-icon">✂️</span>
+            <div>
+              <h3 class="showcase-category-title">BEAUTY & HAIR SERVICES</h3>
+              <p class="showcase-category-desc">Custom haircuts, organic colors & hair nourishment</p>
+            </div>
+          </div>
+          <div class="services-chips-grid">
+            <div class="service-chip" data-service="Pedicure"><span class="chip-star">✦</span> Pedicure</div>
+            <div class="service-chip" data-service="Hair Extensions"><span class="chip-star">✦</span> Hair Extensions</div>
+            <div class="service-chip" data-service="Hair Colour"><span class="chip-star">✦</span> Hair Colour</div>
+            <div class="service-chip" data-service="Men's Style Cut"><span class="chip-star">✦</span> Men's Style Cut</div>
+            <div class="service-chip" data-service="Hair Treatment"><span class="chip-star">✦</span> Hair Treatment</div>
+            <div class="service-chip" data-service="Women's Haircut"><span class="chip-star">✦</span> Women's Haircut</div>
+            <div class="service-chip" data-service="Men's Professional Cut"><span class="chip-star">✦</span> Men's Professional Cut</div>
+          </div>
+        </div>
+
+        <!-- Beauty & Makeup Category Card -->
+        <div class="services-showcase-card">
+          <div class="services-showcase-header">
+            <span class="showcase-icon">💄</span>
+            <div>
+              <h3 class="showcase-category-title">BEAUTY & MAKEUP SERVICES</h3>
+              <p class="showcase-category-desc">Bridal, festive mehandi, dermatological & skin care</p>
+            </div>
+          </div>
+          <div class="services-chips-grid">
+            <div class="service-chip" data-service="Mole Removal"><span class="chip-star">✦</span> Mole Removal</div>
+            <div class="service-chip" data-service="Ear Piercing"><span class="chip-star">✦</span> Ear Piercing</div>
+            <div class="service-chip" data-service="Trending Eyebrow Styling"><span class="chip-star">✦</span> Trending Eyebrow Styling</div>
+            <div class="service-chip" data-service="Bridal Makeup"><span class="chip-star">✦</span> Bridal Makeup</div>
+            <div class="service-chip" data-service="Mehandi"><span class="chip-star">✦</span> Mehandi</div>
+            <div class="service-chip" data-service="Groom Makeup"><span class="chip-star">✦</span> Groom Makeup</div>
+            <div class="service-chip" data-service="Facial"><span class="chip-star">✦</span> Facial</div>
+            <div class="service-chip" data-service="Nail Arts"><span class="chip-star">✦</span> Nail Arts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Virtual Studio / Live Try-On Section -->
+  <section class="virtual-studio" id="virtual-studio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Interactive Experience</span>
+        <h2 class="section-title">Virtual Makeup Studio</h2>
+        <p class="section-desc-center">Experience real-time lip shade coverage simulation directly on our model canvas.</p>
+      </div>
+
+      <div class="studio-grid">
+        <!-- Studio Image & Dynamic SVG Overlay Preview Container -->
+        <div class="studio-preview">
+          <img 
+            src="/user-studio-model.jpg" 
+            alt="Virtual Model Preview" 
+            class="studio-model-img"
+          />
+          <div class="lip-overlay-container" id="lip-overlay-container">
+            <!-- 4 Blend Mode SVG Color Layers -->
+            <svg class="lip-overlay-svg lip-color-layer" viewBox="0 0 568 439" preserveAspectRatio="xMidYMid slice">
+              <path class="lip-path upper-lip" d="M 327,248 C 334,242 344,233 352,232 C 356,233 360,235 362,235 C 365,235 368,233 372,231 C 381,232 396,234 404,236 C 395,241 380,245 365,246 C 350,246 336,244 327,248 Z" />
+              <path class="lip-path lower-lip" d="M 327,248 C 336,244 350,246 365,246 C 380,245 395,241 404,236 C 395,255 382,263 365,263 C 348,263 336,256 327,248 Z" />
+            </svg>
+            <svg class="lip-overlay-svg lip-softlight-layer" viewBox="0 0 568 439" preserveAspectRatio="xMidYMid slice">
+              <path class="lip-path-soft upper-lip" d="M 327,248 C 334,242 344,233 352,232 C 356,233 360,235 362,235 C 365,235 368,233 372,231 C 381,232 396,234 404,236 C 395,241 380,245 365,246 C 350,246 336,244 327,248 Z" />
+              <path class="lip-path-soft lower-lip" d="M 327,248 C 336,244 350,246 365,246 C 380,245 395,241 404,236 C 395,255 382,263 365,263 C 348,263 336,256 327,248 Z" />
+            </svg>
+            <svg class="lip-overlay-svg lip-multiply-layer" viewBox="0 0 568 439" preserveAspectRatio="xMidYMid slice">
+              <path class="lip-path-mult upper-lip" d="M 327,248 C 334,242 344,233 352,232 C 356,233 360,235 362,235 C 365,235 368,233 372,231 C 381,232 396,234 404,236 C 395,241 380,245 365,246 C 350,246 336,244 327,248 Z" />
+              <path class="lip-path-mult lower-lip" d="M 327,248 C 336,244 350,246 365,246 C 380,245 395,241 404,236 C 395,255 382,263 365,263 C 348,263 336,256 327,248 Z" />
+            </svg>
+            <svg class="lip-overlay-svg lip-overlay-layer" viewBox="0 0 568 439" preserveAspectRatio="xMidYMid slice">
+              <path class="lip-path-overlay lower-lip" d="M 327,248 C 336,244 350,246 365,246 C 380,245 395,241 404,236 C 395,255 382,263 365,263 C 348,263 336,256 327,248 Z" />
+            </svg>
+
+            <!-- Manual Lip Mask Editor Interactive Overlay -->
+            <svg id="lip-editor-svg" class="lip-overlay-svg lip-editor-layer" viewBox="0 0 568 439" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <filter id="lip-feather" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="0.8" />
+                </filter>
+              </defs>
+
+              <g id="lip-editor-group" class="lip-editor-group hidden">
+                <!-- Guide Lines -->
+                <path id="guide-upper-lip" class="guide-lip-path" d="" />
+                <path id="guide-lower-lip" class="guide-lip-path" d="" />
+                
+                <!-- Draggable Control Point Handles -->
+                <circle class="lip-handle" id="handle-u_left" r="7" cx="327" cy="248" data-point="upperLeft" aria-label="Drag Left Corner" />
+                <circle class="lip-handle" id="handle-u_left_peak" r="7" cx="352" cy="232" data-point="upperLeftPeak" aria-label="Drag Cupid Left Peak" />
+                <circle class="lip-handle" id="handle-u_dip" r="7" cx="362" cy="235" data-point="upperDip" aria-label="Drag Cupid Dip" />
+                <circle class="lip-handle" id="handle-u_right_peak" r="7" cx="372" cy="231" data-point="upperRightPeak" aria-label="Drag Cupid Right Peak" />
+                <circle class="lip-handle" id="handle-u_right" r="7" cx="404" cy="236" data-point="upperRight" aria-label="Drag Right Corner" />
+                <circle class="lip-handle" id="handle-u_inner" r="7" cx="365" cy="246" data-point="upperInner" aria-label="Drag Upper Inner Center" />
+                <circle class="lip-handle" id="handle-l_bottom" r="7" cx="365" cy="263" data-point="lowerBottom" aria-label="Drag Lower Bottom Center" />
+                <circle class="lip-handle" id="handle-l_inner" r="7" cx="365" cy="246" data-point="lowerInner" aria-label="Drag Lower Inner Center" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Studio Interactive Controls -->
+        <div class="studio-controls">
+          <h3 class="studio-controls-heading">Live Lip Color Simulator</h3>
+          <p class="studio-controls-desc">
+            Select any shade to preview instant coverage, or switch to manual mode to adjust the lip mask boundary.
+          </p>
+
+          <!-- Mode Switcher Header -->
+          <div class="studio-mode-bar">
+            <button type="button" class="btn-outline btn-adjust-mode" id="toggle-manual-mode-btn">
+              <span class="mode-icon">✏️</span> Adjust Lip Mask Manually
+            </button>
+            <span class="mask-status-tag" id="mask-status-tag">✨ Auto Detection Active</span>
+          </div>
+
+          <!-- Manual Mask Fitting Control Panel (Hidden by default) -->
+          <div class="manual-adjust-panel hidden" id="manual-adjust-panel">
+            <div class="adjust-header">
+              <h4 class="adjust-title">Manual Mask Correction</h4>
+              <p class="adjust-instructions">Drag handles directly on the lip preview image, or use the nudge & transform controls below.</p>
+            </div>
+
+            <!-- Active Region Tabs -->
+            <div class="adjust-region-row">
+              <span class="adjust-label">Target Region:</span>
+              <div class="tab-options">
+                <button type="button" class="adjust-tab active" data-region="both">Both Lips</button>
+                <button type="button" class="adjust-tab" data-region="upper">Upper Lip</button>
+                <button type="button" class="adjust-tab" data-region="lower">Lower Lip</button>
+              </div>
+            </div>
+
+            <!-- Transform Controls Grid -->
+            <div class="transform-tools-grid">
+              <div class="transform-tool-group">
+                <span class="tool-title">Move Mask:</span>
+                <div class="nudge-pad">
+                  <button type="button" class="nudge-btn" onclick="transformMask('move', 0, -2)" title="Move Up" aria-label="Move Up">▲</button>
+                  <div class="nudge-row">
+                    <button type="button" class="nudge-btn" onclick="transformMask('move', -2, 0)" title="Move Left" aria-label="Move Left">◀</button>
+                    <button type="button" class="nudge-btn" onclick="transformMask('move', 2, 0)" title="Move Right" aria-label="Move Right">▶</button>
+                  </div>
+                  <button type="button" class="nudge-btn" onclick="transformMask('move', 0, 2)" title="Move Down" aria-label="Move Down">▼</button>
+                </div>
+              </div>
+
+              <div class="transform-tool-group">
+                <span class="tool-title">Scale & Rotate:</span>
+                <div class="tool-btn-row">
+                  <button type="button" class="tool-action-btn" onclick="transformMask('scale', 0.98)" title="Shrink Mask">🔍- Shrink</button>
+                  <button type="button" class="tool-action-btn" onclick="transformMask('scale', 1.02)" title="Enlarge Mask">🔍+ Expand</button>
+                </div>
+                <div class="tool-btn-row">
+                  <button type="button" class="tool-action-btn" onclick="transformMask('rotate', -1.5)" title="Rotate Left">🔄 Rotate ↶</button>
+                  <button type="button" class="tool-action-btn" onclick="transformMask('rotate', 1.5)" title="Rotate Right">🔄 Rotate ↷</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reset & Confirm Footer -->
+            <div class="adjust-action-footer">
+              <button type="button" class="btn-outline btn-reset-mask" id="reset-mask-btn">🔄 Reset to Auto</button>
+              <button type="button" class="btn-primary btn-confirm-mask" id="confirm-mask-btn">✅ Save & Confirm Mask</button>
+            </div>
+          </div>
+
+          <!-- Shade Selection Group (Active when not adjusting) -->
+          <div class="shade-picker-group" id="shade-picker-group">
+            <div class="shade-picker-label">
+              <span>Active Shade:</span>
+              <strong id="studio-color-name" class="text-gold">Ruby Royal</strong>
+            </div>
+
+            <div class="color-dots">
+              <div 
+                class="color-dot active" 
+                style="background: #b82e46;" 
+                data-shade="Ruby Royal"
+                onclick="selectVirtualShade('#b82e46', 'Ruby Royal')"
+                aria-label="Select Ruby Royal Shade"
+              ></div>
+              <div 
+                class="color-dot" 
+                style="background: #e53e6e;" 
+                data-shade="Blush Crush"
+                onclick="selectVirtualShade('#e53e6e', 'Blush Crush')"
+                aria-label="Select Blush Crush Shade"
+              ></div>
+              <div 
+                class="color-dot" 
+                style="background: #8b263e;" 
+                data-shade="Plum Velvet"
+                onclick="selectVirtualShade('#8b263e', 'Plum Velvet')"
+                aria-label="Select Plum Velvet Shade"
+              ></div>
+              <div 
+                class="color-dot" 
+                style="background: #c45c48;" 
+                data-shade="Terracotta Nude"
+                onclick="selectVirtualShade('#c45c48', 'Terracotta Nude')"
+                aria-label="Select Terracotta Nude Shade"
+              ></div>
+              <div 
+                class="color-dot" 
+                style="background: #d46b85;" 
+                data-shade="Rose Quartz"
+                onclick="selectVirtualShade('#d46b85', 'Rose Quartz')"
+                aria-label="Select Rose Quartz Shade"
+              ></div>
+            </div>
+          </div>
+
+          <button class="btn-primary studio-cart-btn" id="studio-cart-btn" onclick="addStudioShadeToCart()">
+            Add Ruby Royal to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Real Client Experiences</span>
+        <h2 class="section-title">Customer Reviews & Ratings</h2>
+        <p class="section-desc-center">
+          Read genuine feedback from beauty lovers worldwide and share your own GLAM Studio journey.
+        </p>
+      </div>
+
+      <div class="reviews-summary-card">
+        <div class="reviews-score-box">
+          <div class="overall-rating">4.9</div>
+          <div class="stars-gold">★★★★★</div>
+          <p class="rating-count-text">Based on 1,427 Verified Reviews</p>
+        </div>
+
+        <div class="reviews-bars">
+          <div class="bar-row">
+            <span>5 Stars</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 88%;"></div></div>
+            <span>88%</span>
+          </div>
+          <div class="bar-row">
+            <span>4 Stars</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 9%;"></div></div>
+            <span>9%</span>
+          </div>
+          <div class="bar-row">
+            <span>3 Stars</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 2%;"></div></div>
+            <span>2%</span>
+          </div>
+          <div class="bar-row">
+            <span>2 Stars</span>
+            <div class="bar-track"><div class="bar-fill" style="width: 1%;"></div></div>
+            <span>1%</span>
+          </div>
+        </div>
+
+        <div class="reviews-cta-box">
+          <h4 class="reviews-cta-title">Loved Your GLAM Look?</h4>
+          <p class="reviews-cta-desc">
+            Help others discover their perfect shade by sharing your honest feedback.
+          </p>
+          <button class="btn-primary" id="open-review-modal-btn">Write a Review ✍️</button>
+        </div>
+      </div>
+
+      <!-- Reviews Filter Tabs -->
+      <div class="review-filter-bar">
+        <button class="tab-btn active" data-review-filter="all">All Reviews</button>
+        <button class="tab-btn" data-review-filter="5">5 Stars ★</button>
+        <button class="tab-btn" data-review-filter="4">4 Stars ★</button>
+        <button class="tab-btn" data-review-filter="verified">Verified Buyers</button>
+      </div>
+
+      <!-- Reviews Grid -->
+      <div class="reviews-grid" id="reviews-grid">
+        <!-- Rendered dynamically via main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Write Review Modal -->
+  <div class="modal-overlay" id="review-modal-overlay"></div>
+  <div class="review-modal" id="review-modal" role="dialog" aria-labelledby="review-modal-title">
+    <div class="modal-header">
+      <h3 class="font-heading modal-header-title" id="review-modal-title">Write a Product Review ✍️</h3>
+      <button class="cart-item-remove modal-close-btn" id="close-review-modal" aria-label="Close Review Modal">✕</button>
+    </div>
+    <form class="review-form" id="review-form">
+      <div class="form-group">
+        <label for="review-author">Your Name</label>
+        <input type="text" id="review-author" class="form-input" placeholder="e.g. Sophia Martinez" required />
+      </div>
+
+      <div class="form-group">
+        <label for="review-product">Select Product</label>
+        <select id="review-product" class="form-input" required>
+          <option value="Velvet Satin Lipstick">Velvet Satin Lipstick</option>
+          <option value="Luminous Silk Foundation">Luminous Silk Foundation</option>
+          <option value="Celestial Eyeshadow Palette">Celestial Eyeshadow Palette</option>
+          <option value="Radiant Skin Elixir Serum">Radiant Skin Elixir Serum</option>
+          <option value="Golden Hour Baked Highlighter">Golden Hour Baked Highlighter</option>
+          <option value="Hydrating Plumping Lip Gloss">Hydrating Plumping Lip Gloss</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Star Rating</label>
+        <div class="star-rating-select" id="star-rating-select">
+          <span data-star="1">★</span>
+          <span data-star="2">★</span>
+          <span data-star="3">★</span>
+          <span data-star="4">★</span>
+          <span data-star="5" class="selected">★</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="review-title">Review Headline</label>
+        <input type="text" id="review-title" class="form-input" placeholder="e.g. Absolutely stunning finish!" required />
+      </div>
+
+      <div class="form-group">
+        <label for="review-comment">Your Review</label>
+        <textarea id="review-comment" class="form-input form-textarea" rows="4" placeholder="Share your experience with color, formula, and wear duration..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary modal-submit-btn">
+        Submit Review ✨
+      </button>
+    </form>
+  </div>
+
+  <!-- Service Appointment Booking Modal -->
+  <div class="modal-overlay" id="booking-modal-overlay"></div>
+  <div class="booking-modal" id="booking-modal" role="dialog" aria-labelledby="booking-service-name">
+    <div class="modal-header">
+      <h3 class="font-heading modal-header-title">Book Salon Treatment 📅</h3>
+      <button class="cart-item-remove modal-close-btn" id="close-booking-modal" aria-label="Close Booking Modal">✕</button>
+    </div>
+    
+    <div class="booking-modal-body">
+      <div class="booking-service-preview">
+        <img id="booking-img" src="/service-mens-cut.jpg" alt="Service Preview" class="booking-preview-img" />
+        <div class="booking-preview-info">
+          <span class="service-card-badge booking-badge-inline" id="booking-badge">Barber & Stylist Pick</span>
+          <h4 id="booking-service-name" class="font-heading booking-service-title">Men's Style & Professional Cut</h4>
+          <p id="booking-service-desc" class="booking-service-text">Precision textured haircut, crisp fade styling, line-up, and scalp refreshing wash.</p>
+          <div class="booking-meta-row">
+            <span id="booking-duration" class="booking-duration-text">⏱ 45 min session</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="booking-form" id="booking-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="booking-client-name">Full Name</label>
+            <input type="text" id="booking-client-name" class="form-input" placeholder="e.g. Alex Johnson" required />
+          </div>
+          <div class="form-group">
+            <label for="booking-client-phone">Phone / WhatsApp</label>
+            <input type="tel" id="booking-client-phone" class="form-input" placeholder="+1 (555) 019-2831" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="booking-date">Preferred Date</label>
+            <input type="date" id="booking-date" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label for="booking-time">Preferred Time Slot</label>
+            <select id="booking-time" class="form-input" required>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="11:30 AM">11:30 AM</option>
+              <option value="02:00 PM">02:00 PM</option>
+              <option value="04:00 PM">04:00 PM</option>
+              <option value="06:00 PM">06:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="booking-notes">Special Requests / Notes</label>
+          <input type="text" id="booking-notes" class="form-input" placeholder="e.g. Skin fade preference, hair mask request..." />
+        </div>
+
+        <button type="submit" class="btn-primary modal-submit-btn">
+          Confirm Booking Appointment ✨
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart Drawer">
+    <div class="cart-header">
+      <h3 class="cart-title">Your Beauty Bag 🛍️</h3>
+      <button class="cart-item-remove" id="close-cart" aria-label="Close Shopping Bag">✕</button>
+    </div>
+
+    <div class="cart-body" id="cart-items">
+      <!-- Items dynamically populated -->
+    </div>
+
+    <div class="cart-footer">
+      <button class="btn-primary full-width-btn" id="checkout-btn">
+        Proceed to Checkout 🔒
+      </button>
+    </div>
+  </aside>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <img src="/glam-logo.png" alt="GLAM Makeover Studio Logo" class="brand-logo-img" />
+            <span class="brand-text">GLAM <span class="logo-badge">MAKEOVER STUDIO</span></span>
+          </a>
+          <p class="footer-brand-text">
+            Redefining luxury beauty with high-pigment formulas, skin-loving ingredients, and signature studio makeovers.
+          </p>
+          <div class="footer-social-wrap">
+            <a 
+              href="https://www.instagram.com/glam_makeover_pondicherry_?utm_source=qr&stkn=MWRzcmplbHZ4MDR3eA%3D%3D" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="nav-instagram-btn"
+              aria-label="Visit GLAM Studio Instagram"
+            >
+              <svg class="instagram-icon" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>@glam_makeover_pondicherry_</span>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Shop Cosmetics</h4>
+          <ul class="footer-links">
+            <li><a href="#products">Lipsticks & Glosses</a></li>
+            <li><a href="#products">Foundations & Concealers</a></li>
+            <li><a href="#products">Eyeshadow Palettes</a></li>
+            <li><a href="#products">Highlighters & Bronzers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Studio & Services</h4>
+          <ul class="footer-links">
+            <li><a href="#shade-finder">Shade Finder Quiz</a></li>
+            <li><a href="#virtual-studio">Virtual Lip Try-On</a></li>
+            <li><a href="#services">Bridal & Salon Booking</a></li>
+            <li><a href="#reviews">Client Testimonials</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">VIP Beauty Club</h4>
+          <p class="footer-vip-desc">
+            Subscribe to get 15% off your first order and exclusive product drops.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('✨ Subscribed to VIP Beauty Club!');">
+            <input type="email" class="newsletter-input" placeholder="Enter your email..." required />
+            <button type="submit" class="btn-primary newsletter-btn">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 GLAM Makeover Studio (Makeup10). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
